@@ -550,6 +550,7 @@ var __meta__ = {
                 if (idx > -1) {
                     data = data[idx];
                     text = that._text(data);
+                    that.selectedDataItem = data;
 
                     if (separator) {
                         text = replaceWordAtCaret(caret(that.element)[0], that._accessor(), text, separator);
